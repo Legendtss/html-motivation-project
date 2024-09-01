@@ -45,7 +45,29 @@ But it must have the following features:
       height: 800px; /* Set the height as needed */
       border:10px solid white;
     }
+  @media (max-width: 768px) {
+  h1 {
+    font-size: 8vw; /* Responsive font size for smaller screens */
+    margin: 10px 0;
+  }
 
+  p {
+    font-size: 5vw; /* Adjust paragraph font size */
+    margin: 10px 0;
+  }
+
+  img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border: 5px solid white; /* Consistent border size */
+    margin-bottom: 20px; /* Add some space below the image */
+  }
+
+  div {
+    width: 90%; /* Center content on mobile */
+    margin: 0 auto; /* Horizontal centering */
+  }
+}
 
     </style>
   </head>
