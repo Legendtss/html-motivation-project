@@ -32,7 +32,7 @@ But it must have the following features:
       font-size: 60px; /* Adjust the size as needed */
       color: white; /* Set the text color */
       text-align: center; /* Center align the text */
-      margin-top: 20px; 
+      margin-top: 20px; /* Add some margin */
     }
     p{
       text-align: center;
@@ -45,29 +45,40 @@ But it must have the following features:
       height: 800px; /* Set the height as needed */
       border:10px solid white;
     }
-  @media (max-width: 768px) {
-  h1 {
-    font-size: 8vw; /* Responsive font size for smaller screens */
-    margin: 10px 0;
-  }
+    /* Mobile-specific adjustments */
+    @media only screen and (max-width: 768px) {
+      body {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+      }
 
-  p {
-    font-size: 5vw; /* Adjust paragraph font size */
-    margin: 10px 0;
-  }
+      h1 {
+        font-size: 8vw; /* Adjust heading size for mobile */
+        margin: 10px 0; /* Adjust margin */
+      }
 
-  img {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    border: 5px solid white; /* Consistent border size */
-    margin-bottom: 20px; /* Add some space below the image */
-  }
+      p {
+        font-size: 5vw; /* Adjust paragraph size */
+        margin: 10px 0; /* Adjust margin */
+      }
 
-  div {
-    width: 90%; /* Center content on mobile */
-    margin: 0 auto; /* Horizontal centering */
-  }
-}
+      img {
+        max-width: 90%; /* Ensure the image scales down for mobile */
+        height: auto; /* Maintain aspect ratio */
+        border: 5px solid white; /* Consistent border size */
+      }
+
+      div {
+        width: 90%; /* Ensure content scales on smaller screens */
+        margin: 0 auto; /* Center the div */
+      }
+    }
+
 
     </style>
   </head>
